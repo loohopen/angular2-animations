@@ -1,0 +1,50 @@
+.bg{
+    margin: 50px auto;
+    background:rgba(0,0,0,.05);
+    width:80%;
+    text-align: center;
+    padding-top: 20px;
+}
+.bg h1{
+    color: rgba(0,0,0,.92);
+}
+.all-in{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: none;
+    border: none;
+    color: rgba(247, 167, 20, 0.85);
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+.demo-bg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.demo-animate{
+    /* background: rgba(0,0,0,.1); */
+    width: 200px;
+    height: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.1)),to rgba(0,0,0,.2));
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,.2));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,.2));
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.2));
+    margin: 15px;
+}
+.demo-animate-unit{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 160px;
+    font-size: 15px;
+    color: rgba(0,0,0,.9);
+    opacity: 0.82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

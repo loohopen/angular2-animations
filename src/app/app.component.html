@@ -1,0 +1,13 @@
+<div class="bg">
+    <h1>Angular2 Animations Demo</h1>
+    <button class="all-in" (click)="allShow()">{{this.showAll ? 'Let All Out' :'Let All In'}}</button>
+    <div class="demo-bg">
+       <div class="demo-animate" *ngFor="let item of allInState" (click)="item.show = !item.show">
+         <div class="demo-animate-unit" *ngIf="item.show" [@animate]="item.animate" [ngStyle]="{'background-color': item.bg}">
+           {{item.animate}}
+         </div>
+       </div>
+    </div>
+</div>
+
+      
