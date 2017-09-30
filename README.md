@@ -8,7 +8,7 @@ an angular2 animations library
    * ng serve
 ## usage:
    * app.component.ts 
-    ````
+     ```
      import { animationFactory } from './animate/index';
      @Component({
      selector: 'app-root',
@@ -17,10 +17,10 @@ an angular2 animations library
      animations: [animationFactory(750, 0, { 'fade': 'ease-in' }> )]
      })
      
-    ````
+    ```
    * app.component.html
-    ````
+     ```
     <div class="demo-animate-unit" *ngIf="item.show" [@animate]="item.animate" [ngStyle]="{'background-color': item.bg}">
            {{item.animate}}
      </div>
-     ````
+     ```
