@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { animationFactory } from './animate/index';
+import * as A from './animate/animation_index';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [animationFactory(750, 0, { 'fade': 'ease-in' })]
+  animations: [A.default.animations]
 })
 export class AppComponent implements OnInit {
-  tt: any[];
+  tt: any;
   allOutState: any[];
   allInState: any[];
   showAll: boolean = true;
   ngOnInit() {
-    this.tt = animationFactory(500, 0, { 'fade': 'ease-in' }).definitions;
+    this.tt = A.default.animations.definitions;
+    console.log(this.tt)
     this.allOutState = this.getAllOutState(this.tt);
     this.allInState = this.getAllInState(this.allOutState);
   }
